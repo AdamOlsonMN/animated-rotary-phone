@@ -1,4 +1,4 @@
-# # Football Play Caller 2018
+# Football Play Caller 2018
 
 The goal of this project is to develop an analysis engine that can be used for assessing offensive playcalling in the NFL. In pursuing that goal, this project will host an active predictor where a person can enter a given situation for a given team and receive probabilistic estimates of the play they will call.
 
