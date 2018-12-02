@@ -1,10 +1,12 @@
 # Essentials: Data Cleansing and ETL
+## Load Packages
 import pandas as pd
-
 import numpy as np
 
-df = pd.read_csv("./plays.csv")
-# add in team here
+# Read And Parse Data
+df = pd.read_csv("./dat/plays.csv")
+
+## Pick Vars for Analysis
 play_attr = [
     "GameID",
     "qtr",
@@ -25,6 +27,7 @@ play_attr = [
 ]
 plays = df[play_attr]
 
+## Remove special teams plays and missing
 plays = plays[
     plays.PlayType.notna()
     & (plays.PlayType != "No Play")
